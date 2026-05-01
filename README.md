@@ -68,7 +68,7 @@ This will:
 - Mount the pre-ingested `chroma_db/` volume
 - Expose the API at `http://localhost:8000`
 
-> First run takes a few minutes while gemma:2b downloads (~1.7GB). Subsequent runs are instant.
+> First run takes a few minutes while gemma3 downloads (~3.6GB). Subsequent runs are instant.
 
 ### 3. Query the API
 
@@ -77,22 +77,7 @@ This will:
 http://localhost:8000/docs
 ```
 
-**Option B — curl:**
-```bash
-curl -X POST http://localhost:8000/api/query \
-  -H "Content-Type: application/json" \
-  -d '{"query": "what is the candidate's experience", "top_k": 3}'
-```
 
-**Option C — Python:**
-```python
-import requests
-r = requests.post("http://localhost:8000/api/query", json={
-    "query": "what certifications does the candidate have",
-    "top_k": 3
-})
-print(r.json())
-```
 
 ---
 
