@@ -1,0 +1,9 @@
+pymupdf
+python-docx
+langchain
+sentence-transformers
+chromadb
+fastapi
+uvicorn
+google-generativeai
+pydantic
