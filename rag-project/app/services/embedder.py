@@ -3,10 +3,9 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 
 
-MODEL_NAME = "all-MiniLM-L6-v2"  # fast, 384-dim, great for semantic similarity
+MODEL_NAME = "BAAI/bge-base-en-v1.5"
 
-_model = None  # lazy load — only instantiate once
-
+_model = None 
 
 def get_model() -> SentenceTransformer:
     global _model

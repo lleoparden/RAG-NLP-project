@@ -5,7 +5,7 @@ from app.services.retriever import retrieve
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/generate")
 MODEL = "gemma3"
 
-def run_rag(query: str, top_k: int = 5) -> dict:
+def run_rag(query: str, top_k: int = 8) -> dict:
     chunks = retrieve(query, top_k=top_k)
 
     context = "\n\n---\n\n".join(
