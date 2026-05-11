@@ -27,3 +27,5 @@ Thumbs.db
 
 # Ollama data (too large for git)
 ollama_data/
+/rag-project/chroma_db
+/rag-project/chroma_db
