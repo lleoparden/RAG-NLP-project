@@ -45,7 +45,7 @@ ANSWER:"""
                 "text": c["text"],
                 "source": c["metadata"]["source"],
                 "page": c["metadata"].get("page", 0),
-                "score": round(c["score"], 4)
+                "score": round(c["score"], 4)       
             }
             for c in chunks
         ]
